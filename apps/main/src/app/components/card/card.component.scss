@@ -1,0 +1,28 @@
+.card {
+  padding: 5px 10px;
+
+  &__joke {
+    margin-top: 5px;
+  }
+  &__img {
+    margin-top: 5px;
+  }
+  &__url {
+    margin-top: 5px;
+  }
+  &__categories {
+    ul {
+      list-style-type: circle;
+    }
+  }
+  &__created-at {
+    margin-top: 5px;
+  }
+  &__wrap-button {
+    margin-top: 5px;
+
+    button {
+      border-radius: 3px;
+    }
+  }
+}

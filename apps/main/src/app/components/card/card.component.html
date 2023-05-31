@@ -1,0 +1,20 @@
+<div class="card">
+  <div class="card__joke">{{joke.value}}</div>
+  <div class="card__img">
+    <img *ngIf="joke.icon_url" [src]="joke.icon_url" alt="">
+  </div>
+  <div *ngIf="joke.categories" class="card__categories">
+    <ul *ngFor="let c of joke.categories">
+      <li>{{ c }}</li>
+    </ul>
+  </div>
+  <div class="card__created-at">
+    <span>{{joke.created_at | date }}</span>
+  </div>
+  <div class="card__url">
+    <a href="">{{joke.url}}</a>
+  </div>
+  <div class="card__wrap-button">
+    <button (click)="loadAnotherJoke()">Load Another Joke</button>
+  </div>
+</div>
